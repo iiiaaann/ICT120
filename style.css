@@ -1,0 +1,263 @@
+body {
+    font-family: Roboto;
+    color: white;
+    font-size: 10px;
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+}
+
+ul a {
+    text-decoration: none;
+    display: block;
+    padding: 1%;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px 20px;
+}
+
+ul a:hover {
+    background: #1690DB;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/*permet de  */
+* {
+    box-sizing: border-box;
+}
+
+.nav {
+    margin: 10px;
+    margin-bottom: 0px;
+    background-color: #0f6195;
+}
+
+#logo {
+    /*flex-grow: 150;
+    padding: 3px;*/
+}
+
+#header {
+    padding: 5px;
+}
+
+#btSettings {
+    display: none;
+}
+
+#slider {
+    margin: 10px;
+    margin-top: 0px;
+    /*le height doit absolument être dans le container*/
+    height: 350px;
+    background-image: url(./images/boat.jpg);
+    background-position-y: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.layer {
+    text-align: center;
+    font-weight: bold;
+    font-size: 70px;
+    font-family: Roboto Slab;
+    background-color: #0071b4;
+    padding: 1%;
+}
+
+.titleR {
+    color: #ffa500;
+}
+
+.titleC {
+    color: white;
+}
+
+#groupe_produits {
+    display: flex;
+    /*permet de zoomer/rétressir la fenêtre et les éléments se wrap au lieu de resize*/
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+    height: 400px;
+    gap: 10px;
+}
+
+#groupe_produits>div {
+    width: 250px;
+    border-style: solid;
+    border-color: #000;
+    border-width: 1px;
+}
+
+.imgProduits {
+    object-fit: cover;
+}
+
+.titleProduits {
+    font-size: large;
+    font-weight: bold;
+    color: #12403E;
+    padding: 15px;
+    border-bottom: 1px solid #000;
+}
+
+.txtProduits {
+    color: #000;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.arrowProduits {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.parentArrowProduits {
+    position: relative;
+}
+
+#groupe_news_form {
+    display: flex;
+    justify-content: center;
+    /*le height doit absolument être dans le container*/
+    height: 400px;
+    margin: 10px;
+    padding: 20px;
+    gap: 10px;
+}
+
+#groupe_news_form>div {
+    /*le width peut être ici*/
+    width: 510px;
+    border-style: solid;
+    border-color: #000;
+    border-width: 1px;
+}
+
+.titleNewsForm {
+    font-size: large;
+    font-weight: bold;
+    color: #12403E;
+    padding: 15px;
+    padding-bottom: 0px;
+}
+
+.invisibleBorder {
+    border: 1px solid white;
+    padding: 10px 10px;
+}
+
+.invisibleBorderNewsForm {
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+
+.txtNewsForm {
+    color: #000;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+input[type=text],
+input[type=email],
+input[type=password] {
+    width: 60%;
+    padding: 10px;
+    margin: 8px 20%;
+    display: inline-block;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+button {
+    background-color: #0071b4;
+    border-color: #0071b4;
+    border-radius: 2px;
+    color: #fff;
+    padding: 10px;
+    margin: 8px 20%;
+    width: 60%;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#footer {
+    background-color: #0f6195;
+    /*le height doit absolument être dans le container*/
+    height: 50px;
+    margin: 10px;
+}
+
+@media only screen and (max-width: 500px) {
+
+    body {
+        font-size: 8px;
+    }
+
+    /*
+    #btSettings {
+        display: flex;
+    }*/
+
+    .bulletMenu {
+        flex-flow: column wrap;
+        padding: 0;
+    }
+
+    .bulletMenu a {
+        padding: 10px;
+    }
+
+    .bulletMenu li:last-of-type a {
+        border-bottom: none;
+    }
+
+    #test22 {
+        display: inline-block;
+        align-self: flex-end;
+        align-items: end;
+        position: relative;
+    }
+
+    #slider {
+        /*le height doit absolument être dans le container*/
+        height: 200px;
+    }
+
+    #groupe_produits {
+        /*le height doit absolument être dans le container*/
+        height: 800px;
+        padding: 10 0 0 0;
+    }
+
+    #groupe_produits div {
+        width: 100%;
+    }
+
+    #groupe_news_form {
+        background-color: white;
+        flex-wrap: wrap;
+        /*le height doit absolument être dans le container*/
+        height: 400px;
+        padding: 0 0 0 0;
+    }
+}

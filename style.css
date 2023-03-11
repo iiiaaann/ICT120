@@ -1,57 +1,52 @@
 body {
-    font-family: Roboto;
+    font-family: "Roboto";
     color: white;
-    font-size: 10px;
+    font-size: 20px;
     margin: 0px;
-    padding: 0px;
 }
 
-ul {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-end;
-    list-style: none;
-    margin: 0;
-}
-
-ul a {
-    text-decoration: none;
-    display: block;
-    padding: 1%;
-    color: white;
-    cursor: pointer;
-    font-weight: bold;
-    padding: 5px 20px;
-}
-
-ul a:hover {
-    background: #1690DB;
-    font-weight: bold;
-    border-radius: 5px;
-}
-
-/*permet de  */
-* {
-    box-sizing: border-box;
-}
-
-.nav {
-    margin: 10px;
-    margin-bottom: 0px;
+header {
+    width: 100%;
+    height: 100px;
     background-color: #0f6195;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 #logo {
-    /*flex-grow: 150;
-    padding: 3px;*/
+    padding: 10px;
+    padding-top: 20px;
+    flex: 0 0 100px;
+    box-sizing: border-box;
 }
 
-#header {
-    padding: 5px;
+#logo img {
+    width: 50px;
 }
 
-#btSettings {
+#menu {
+    box-sizing: border-box;
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex: 1 1 auto;
+}
+
+#hamburger {
     display: none;
+}
+
+#menu .menuItem {
+    flex: 0 0 0;
+    padding: 20px;
+    padding-top: 40px;
+}
+
+#menu .menuItem:hover {
+    cursor: pointer;
+    background-color: #0071b4;
 }
 
 #slider {
@@ -212,11 +207,6 @@ button:hover {
     body {
         font-size: 8px;
     }
-
-    /*
-    #btSettings {
-        display: flex;
-    }*/
 
     .bulletMenu {
         flex-flow: column wrap;

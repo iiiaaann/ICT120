@@ -98,6 +98,22 @@ header {
     background-position: center;
 }
 
+#imgElectronic {
+    background-image: url("images/electronique.jpg");
+}
+
+#imgVehicle {
+    background-image: url("images/vehicules.png");
+}
+
+#imgClothes {
+    background-image: url("images/habits.jpg");
+}
+
+#imgSales {
+    background-image: url("images/soldes.jpg");
+}
+
 .title {
     font-size: large;
     font-weight: bold;
@@ -116,6 +132,10 @@ header {
     position: absolute;
     bottom: 10px;
     right: 10px;
+}
+
+.arrowProducts img {
+    width: 20px;
 }
 
 .parentArrowProducts {
@@ -141,10 +161,8 @@ header {
     display: block;
 }
 
-.txtNewsForm {
-    color: #000;
-    padding-left: 15px;
-    padding-right: 15px;
+form {
+    padding: 20px;
 }
 
 input[type=text],
@@ -174,11 +192,15 @@ button:hover {
     opacity: 0.8;
 }
 
-#footer {
+footer {
     background-color: #0f6195;
+    margin: 10px;
+    margin-top: 20px;
+    padding: 15px;
     /*le height doit absolument être dans le container*/
     height: 50px;
-    margin: 10px;
+    text-align: center;
+    display: block;
 }
 
 @media only screen and (max-width: 500px) {

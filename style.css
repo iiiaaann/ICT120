@@ -73,90 +73,76 @@ header {
     color: white;
 }
 
-#groupe_produits {
+#groupeProducts {
     display: flex;
-    /*permet de zoomer/rétressir la fenêtre et les éléments se wrap au lieu de resize*/
     flex-wrap: wrap;
     justify-content: center;
+    flex-direction: row;
+    margin: auto;
+    padding: 10px;
+}
+
+#groupeProducts>div {
+    min-height: 400px;
+    width: 400px;
+    border: 1px solid #A6A6A6;
     margin: 10px;
-    height: 400px;
-    gap: 10px;
 }
 
-#groupe_produits>div {
-    width: 250px;
-    border-style: solid;
-    border-color: #000;
-    border-width: 1px;
+.imgProducts {
+    width: 100%;
+    height: 200px;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
 }
 
-.imgProduits {
-    object-fit: cover;
-}
-
-.titleProduits {
+.title {
     font-size: large;
     font-weight: bold;
     color: #12403E;
     padding: 15px;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px dotted #A6A6A6;
 }
 
-.txtProduits {
+.descriptionProducts {
     color: #000;
-    font-weight: bold;
+    font-size: medium;
     padding: 15px;
 }
 
-.arrowProduits {
+.arrowProducts {
     position: absolute;
     bottom: 10px;
     right: 10px;
 }
 
-.parentArrowProduits {
+.parentArrowProducts {
     position: relative;
 }
 
-#groupe_news_form {
+#groupNewsForm {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    /*le height doit absolument être dans le container*/
-    height: 400px;
-    margin: 10px;
-    padding: 20px;
-    gap: 10px;
-}
-
-#groupe_news_form>div {
-    /*le width peut être ici*/
-    width: 510px;
-    border-style: solid;
-    border-color: #000;
-    border-width: 1px;
-}
-
-.titleNewsForm {
-    font-size: large;
-    font-weight: bold;
-    color: #12403E;
+    flex-direction: row;
+    margin: auto;
     padding: 15px;
-    padding-bottom: 0px;
+    border-top: 1px solid #A6A6A6;
 }
 
-.invisibleBorder {
-    border: 1px solid white;
-    padding: 10px 10px;
-}
-
-.invisibleBorderNewsForm {
-    color: #000;
-    border-bottom: 1px solid #000;
+#groupNewsForm>div {
+    width: 800px;
+    min-height: 300px;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #A6A6A6;
+    display: block;
 }
 
 .txtNewsForm {
     color: #000;
-    font-weight: bold;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -168,7 +154,7 @@ input[type=password] {
     padding: 10px;
     margin: 8px 20%;
     display: inline-block;
-    border: 1px solid #000;
+    border: 1px solid #A6A6A6;
     box-sizing: border-box;
     border-radius: 2px;
 }
@@ -226,17 +212,17 @@ button:hover {
         height: 200px;
     }
 
-    #groupe_produits {
+    #groupe_Products {
         /*le height doit absolument être dans le container*/
         height: 800px;
         padding: 10 0 0 0;
     }
 
-    #groupe_produits div {
+    #groupe_Products div {
         width: 100%;
     }
 
-    #groupe_news_form {
+    #groupNewsForm {
         background-color: white;
         flex-wrap: wrap;
         /*le height doit absolument être dans le container*/

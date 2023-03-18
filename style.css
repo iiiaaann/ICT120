@@ -16,8 +16,7 @@ header {
 
 #logo {
     padding: 10px;
-    padding-top: 20px;
-    flex: 0 0 100px;
+    padding-top: 25px;
     box-sizing: border-box;
 }
 
@@ -25,15 +24,15 @@ header {
     width: 50px;
 }
 
+#hamburger {
+    display: none;
+}
+
 #menu {
     box-sizing: border-box;
     display: flex;
     align-items: stretch;
     flex-direction: row;
-}
-
-#hamburger {
-    display: none;
 }
 
 #menu .menuItem {
@@ -194,7 +193,6 @@ button:hover {
 
 footer {
     background-color: #0f6195;
-    margin: 10px;
     margin-top: 20px;
     padding: 15px;
     /*le height doit absolument être dans le container*/
@@ -203,31 +201,72 @@ footer {
     display: block;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
 
     body {
-        font-size: 8px;
+        font-size: 25px;
     }
 
-    .bulletMenu {
-        flex-flow: column wrap;
-        padding: 0;
+    header {
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
     }
 
-    .bulletMenu a {
-        padding: 10px;
+    #logo {
+        width: 70px;
     }
 
-    .bulletMenu li:last-of-type a {
-        border-bottom: none;
+    #menu {
+        width: 100%;
+        flex: 1 1 auto;
+        margin-top: 0px;
+        margin-left: 0px;
+        padding: 0px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        flex-direction: column;
+        z-index: 10;
     }
 
-    #test22 {
-        display: inline-block;
-        align-self: flex-end;
-        align-items: end;
-        position: relative;
+    #menu .menuItem {
+        box-sizing: border-box;
+        flex: 1 0 0;
+        background-color: #0f6195;
+        width: 100%;
+        padding: 15px;
+        border-top: 1px solid white;
     }
+
+    .menuItem {
+        display: none;
+    }
+
+    #hamburger:hover .menuItem {
+        display: block;
+    }
+
+    #menu:hover .menuItem {
+        display: block;
+    }
+
+    #hamburger {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 20px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+        z-index: 10;
+    }
+
+    #hamburger img {
+        width: 50px;
+    }
+
+
 
     #slider {
         /*le height doit absolument être dans le container*/
@@ -251,5 +290,4 @@ footer {
         height: 400px;
         padding: 0 0 0 0;
     }
-
 }

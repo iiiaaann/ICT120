@@ -106,12 +106,13 @@
                 <div class="invisibleBorderNewsForm"></div>
             </div>
             <div>
-                <form>
+                <form action="index.php" method="post">
                     <input type="text" placeholder="Nom" name="your name">
 
                     <input type="email" placeholder="Email" name="email" required>
 
-                    <input class="pw" type="password" placeholder="Mot de passe" name="password" required>
+                    <input class="pw" type="password" pattern=".{12,}" placeholder="Mot de passe" name="password"
+                        required title="12 characters minimum">
 
                     <input class="pwConfirmation" type="password" placeholder="Confirmation du mot de passe"
                         name="password confirmation" required>

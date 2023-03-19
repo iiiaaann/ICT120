@@ -1,6 +1,6 @@
 body {
     font-family: "Roboto";
-    color: white;
+    color: #fff;
     font-size: 20px;
     margin: 0px;
 }
@@ -70,20 +70,20 @@ header {
 }
 
 #titleC {
-    color: white;
+    color: #fff;
 }
 
 #groupProducts {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    flex-direction: row;
     margin: auto;
-    padding: 10px;
+    padding: 15px;
 }
 
-#groupProducts>div {
-    min-height: 400px;
+.products {
+    min-height: 500px;
     width: 400px;
     border: 1px solid #A6A6A6;
     margin: 10px;
@@ -94,7 +94,7 @@ header {
     height: 200px;
     display: block;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% auto;
     background-position: center;
 }
 
@@ -115,7 +115,7 @@ header {
 }
 
 .title {
-    font-size: large;
+    font-size: 25px;
     font-weight: bold;
     color: #12403E;
     padding: 15px;
@@ -124,7 +124,7 @@ header {
 
 .descriptionProducts {
     color: #000;
-    font-size: medium;
+    font-size: 15px;
     padding: 15px;
 }
 
@@ -147,22 +147,19 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: row;
-    margin: auto;
     padding: 15px;
     border-top: 1px solid #A6A6A6;
+    align-items: stretch;
 }
 
-#groupNewsForm>div {
+#news,
+#form {
     width: 800px;
-    min-height: 300px;
+    min-height: 250px;
     margin: 10px;
     padding: 15px;
     border: 1px solid #A6A6A6;
     display: block;
-}
-
-form {
-    padding: 20px;
 }
 
 input[type=text],
@@ -277,13 +274,37 @@ footer {
         font-size: 50px;
     }
 
-    #groupProducts #groupNewsForm {
+    /*doesn't work but don't know why
+    #groupProducts {
+        margin-bottom: 0px;
+    }
+    */
+
+    .products {
+        min-height: 400px;
+        margin-bottom: 10px;
+    }
+
+    #groupProducts,
+    #groupNewsForm {
         padding: 0 20 0 20;
         border: 0px;
         align-items: flex-start;
     }
 
-    .product #news #form {
+    /*doesn't work but don't know why
+    #groupNewsForm {
+        margin-top: 0px;
+    }
+    */
+
+    #news {
+        margin-top: 0px;
+    }
+
+    .products,
+    #news,
+    #form {
         width: 100%;
         margin-left: 0px;
         margin-right: 0px;

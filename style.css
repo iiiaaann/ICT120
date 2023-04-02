@@ -41,6 +41,17 @@ header {
     padding-top: 40px;
 }
 
+#menu .menuItem a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#menu .menuItem a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+
 #menu .menuItem:hover {
     cursor: pointer;
     background-color: #0071b4;
